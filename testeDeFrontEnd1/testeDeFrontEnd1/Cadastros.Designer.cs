@@ -36,12 +36,13 @@ namespace testeDeFrontEnd1
             this.ManterEditoras = new System.Windows.Forms.Button();
             this.ManterFuncionarios = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SidePanelCadastros = new System.Windows.Forms.Panel();
             this.manterFuncionarios1 = new testeDeFrontEnd1.ManterFuncionarios();
             this.manterEditoras1 = new testeDeFrontEnd1.ManterEditoras();
             this.manterClientes1 = new testeDeFrontEnd1.ManterClientes();
             this.manterAutores1 = new testeDeFrontEnd1.ManterAutores();
             this.manterLivros1 = new testeDeFrontEnd1.ManterLivros();
-            this.SidePanelCadastros = new System.Windows.Forms.Panel();
+            this.manterClientes2 = new testeDeFrontEnd1.ManterClientes();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,6 +144,15 @@ namespace testeDeFrontEnd1
             this.panel1.Size = new System.Drawing.Size(227, 421);
             this.panel1.TabIndex = 10;
             // 
+            // SidePanelCadastros
+            // 
+            this.SidePanelCadastros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.SidePanelCadastros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.SidePanelCadastros.Location = new System.Drawing.Point(0, 14);
+            this.SidePanelCadastros.Name = "SidePanelCadastros";
+            this.SidePanelCadastros.Size = new System.Drawing.Size(5, 62);
+            this.SidePanelCadastros.TabIndex = 16;
+            // 
             // manterFuncionarios1
             // 
             this.manterFuncionarios1.Location = new System.Drawing.Point(226, -2);
@@ -178,19 +188,18 @@ namespace testeDeFrontEnd1
             this.manterLivros1.Size = new System.Drawing.Size(500, 420);
             this.manterLivros1.TabIndex = 11;
             // 
-            // SidePanelCadastros
+            // manterClientes2
             // 
-            this.SidePanelCadastros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.SidePanelCadastros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.SidePanelCadastros.Location = new System.Drawing.Point(0, 14);
-            this.SidePanelCadastros.Name = "SidePanelCadastros";
-            this.SidePanelCadastros.Size = new System.Drawing.Size(5, 62);
-            this.SidePanelCadastros.TabIndex = 16;
+            this.manterClientes2.Location = new System.Drawing.Point(227, 0);
+            this.manterClientes2.Name = "manterClientes2";
+            this.manterClientes2.Size = new System.Drawing.Size(500, 420);
+            this.manterClientes2.TabIndex = 16;
             // 
             // Cadastros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.manterClientes2);
             this.Controls.Add(this.manterFuncionarios1);
             this.Controls.Add(this.manterEditoras1);
             this.Controls.Add(this.manterClientes1);
@@ -218,5 +227,6 @@ namespace testeDeFrontEnd1
         private ManterEditoras manterEditoras1;
         private ManterFuncionarios manterFuncionarios1;
         private System.Windows.Forms.Panel SidePanelCadastros;
+        private ManterClientes manterClientes2;
     }
 }

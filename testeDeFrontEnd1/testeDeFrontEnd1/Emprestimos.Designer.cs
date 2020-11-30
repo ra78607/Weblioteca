@@ -31,11 +31,15 @@ namespace testeDeFrontEnd1
         {
             this.EmprestarExemplares = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SidePanelForm1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ProlongarEmprestimo = new System.Windows.Forms.Button();
             this.FaturarEmprestimo = new System.Windows.Forms.Button();
             this.DevolucaoExemplares = new System.Windows.Forms.Button();
-            this.SidePanelForm1 = new System.Windows.Forms.Panel();
+            this.prolongarEmprestimo1 = new testeDeFrontEnd1.ProlongarEmprestimo();
+            this.devolucaoDeExemplares1 = new testeDeFrontEnd1.DevolucaoDeExemplares();
+            this.emprestarExemplares1 = new testeDeFrontEnd1.EmprestarExemplares();
+            this.faturarEmprestimo1 = new testeDeFrontEnd1.FaturarEmprestimo();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,8 +67,17 @@ namespace testeDeFrontEnd1
             this.panel1.Controls.Add(this.EmprestarExemplares);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(226, 420);
+            this.panel1.Size = new System.Drawing.Size(221, 420);
             this.panel1.TabIndex = 1;
+            // 
+            // SidePanelForm1
+            // 
+            this.SidePanelForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.SidePanelForm1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.SidePanelForm1.Location = new System.Drawing.Point(0, 26);
+            this.SidePanelForm1.Name = "SidePanelForm1";
+            this.SidePanelForm1.Size = new System.Drawing.Size(5, 62);
+            this.SidePanelForm1.TabIndex = 2;
             // 
             // panel2
             // 
@@ -115,22 +128,45 @@ namespace testeDeFrontEnd1
             this.DevolucaoExemplares.UseVisualStyleBackColor = false;
             this.DevolucaoExemplares.Click += new System.EventHandler(this.DevolucaoExemplares_Click);
             // 
-            // SidePanelForm1
+            // prolongarEmprestimo1
             // 
-            this.SidePanelForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.SidePanelForm1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.SidePanelForm1.Location = new System.Drawing.Point(0, 26);
-            this.SidePanelForm1.Name = "SidePanelForm1";
-            this.SidePanelForm1.Size = new System.Drawing.Size(5, 62);
-            this.SidePanelForm1.TabIndex = 2;
+            this.prolongarEmprestimo1.Location = new System.Drawing.Point(227, 0);
+            this.prolongarEmprestimo1.Name = "prolongarEmprestimo1";
+            this.prolongarEmprestimo1.Size = new System.Drawing.Size(500, 420);
+            this.prolongarEmprestimo1.TabIndex = 5;
+            // 
+            // devolucaoDeExemplares1
+            // 
+            this.devolucaoDeExemplares1.Location = new System.Drawing.Point(227, 0);
+            this.devolucaoDeExemplares1.Name = "devolucaoDeExemplares1";
+            this.devolucaoDeExemplares1.Size = new System.Drawing.Size(500, 420);
+            this.devolucaoDeExemplares1.TabIndex = 4;
+            // 
+            // emprestarExemplares1
+            // 
+            this.emprestarExemplares1.Location = new System.Drawing.Point(227, 0);
+            this.emprestarExemplares1.Name = "emprestarExemplares1";
+            this.emprestarExemplares1.Size = new System.Drawing.Size(500, 420);
+            this.emprestarExemplares1.TabIndex = 3;
+            // 
+            // faturarEmprestimo1
+            // 
+            this.faturarEmprestimo1.Location = new System.Drawing.Point(227, 0);
+            this.faturarEmprestimo1.Name = "faturarEmprestimo1";
+            this.faturarEmprestimo1.Size = new System.Drawing.Size(500, 420);
+            this.faturarEmprestimo1.TabIndex = 2;
             // 
             // Emprestimos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.prolongarEmprestimo1);
+            this.Controls.Add(this.devolucaoDeExemplares1);
+            this.Controls.Add(this.emprestarExemplares1);
+            this.Controls.Add(this.faturarEmprestimo1);
             this.Controls.Add(this.panel1);
             this.Name = "Emprestimos";
-            this.Size = new System.Drawing.Size(729, 421);
+            this.Size = new System.Drawing.Size(734, 426);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -145,5 +181,9 @@ namespace testeDeFrontEnd1
         private System.Windows.Forms.Button ProlongarEmprestimo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel SidePanelForm1;
+        private FaturarEmprestimo faturarEmprestimo1;
+        private EmprestarExemplares emprestarExemplares1;
+        private DevolucaoDeExemplares devolucaoDeExemplares1;
+        private ProlongarEmprestimo prolongarEmprestimo1;
     }
 }

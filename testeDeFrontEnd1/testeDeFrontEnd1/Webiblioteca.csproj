@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +52,30 @@
     </Compile>
     <Compile Include="Cadastros.Designer.cs">
       <DependentUpon>Cadastros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelarReserva.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CancelarReserva.Designer.cs">
+      <DependentUpon>CancelarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevolucaoDeExemplares.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DevolucaoDeExemplares.Designer.cs">
+      <DependentUpon>DevolucaoDeExemplares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmprestarExemplares.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmprestarExemplares.Designer.cs">
+      <DependentUpon>EmprestarExemplares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmprestimoReserva.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmprestimoReserva.Designer.cs">
+      <DependentUpon>EmprestimoReserva.cs</DependentUpon>
     </Compile>
     <Compile Include="Emprestimos.cs">
       <SubType>UserControl</SubType>
@@ -101,12 +126,24 @@
       <DependentUpon>ManterLivros.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProlongarEmprestimo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProlongarEmprestimo.Designer.cs">
+      <DependentUpon>ProlongarEmprestimo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Relatorios.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Relatorios.Designer.cs">
       <DependentUpon>Relatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReservarExemplar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReservarExemplar.Designer.cs">
+      <DependentUpon>ReservarExemplar.cs</DependentUpon>
     </Compile>
     <Compile Include="Reservas.cs">
       <SubType>UserControl</SubType>
@@ -120,14 +157,26 @@
     <Compile Include="TelaDeLogin.Designer.cs">
       <DependentUpon>TelaDeLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaEmprestimos.cs">
+    <Compile Include="TelaHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TelaEmprestimos.Designer.cs">
-      <DependentUpon>TelaEmprestimos.cs</DependentUpon>
+    <Compile Include="TelaHome.Designer.cs">
+      <DependentUpon>TelaHome.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Cadastros.resx">
       <DependentUpon>Cadastros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelarReserva.resx">
+      <DependentUpon>CancelarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevolucaoDeExemplares.resx">
+      <DependentUpon>DevolucaoDeExemplares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmprestarExemplares.resx">
+      <DependentUpon>EmprestarExemplares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmprestimoReserva.resx">
+      <DependentUpon>EmprestimoReserva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Emprestimos.resx">
       <DependentUpon>Emprestimos.cs</DependentUpon>
@@ -153,6 +202,9 @@
     <EmbeddedResource Include="ManterLivros.resx">
       <DependentUpon>ManterLivros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProlongarEmprestimo.resx">
+      <DependentUpon>ProlongarEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -165,14 +217,17 @@
     <EmbeddedResource Include="Relatorios.resx">
       <DependentUpon>Relatorios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReservarExemplar.resx">
+      <DependentUpon>ReservarExemplar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reservas.resx">
       <DependentUpon>Reservas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaDeLogin.resx">
       <DependentUpon>TelaDeLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaEmprestimos.resx">
-      <DependentUpon>TelaEmprestimos.cs</DependentUpon>
+    <EmbeddedResource Include="TelaHome.resx">
+      <DependentUpon>TelaHome.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

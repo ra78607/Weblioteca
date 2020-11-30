@@ -15,30 +15,38 @@ namespace testeDeFrontEnd1
         public Emprestimos()
         {
             InitializeComponent();
+            SidePanelForm1.Height = EmprestarExemplares.Height;
+            SidePanelForm1.Top = EmprestarExemplares.Top;
+            emprestarExemplares1.BringToFront();
+
         }
 
         private void EmprestarExemplares_Click(object sender, EventArgs e)
         {
             SidePanelForm1.Height = EmprestarExemplares.Height;
             SidePanelForm1.Top = EmprestarExemplares.Top;
+            emprestarExemplares1.BringToFront();
         }
 
         private void DevolucaoExemplares_Click(object sender, EventArgs e)
         {
             SidePanelForm1.Height = DevolucaoExemplares.Height;
             SidePanelForm1.Top = DevolucaoExemplares.Top;
+            devolucaoDeExemplares1.BringToFront();
         }
 
         private void FaturarEmprestimo_Click(object sender, EventArgs e)
         {
             SidePanelForm1.Height = FaturarEmprestimo.Height;
             SidePanelForm1.Top = FaturarEmprestimo.Top;
+            faturarEmprestimo1.BringToFront();
         }
 
         private void ProlongarEmprestimo_Click(object sender, EventArgs e)
         {
             SidePanelForm1.Height = ProlongarEmprestimo.Height;
             SidePanelForm1.Top = ProlongarEmprestimo.Top;
+            prolongarEmprestimo1.BringToFront();
         }
     }
 }

@@ -42,12 +42,15 @@ namespace testeDeFrontEnd1
             this.label1 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.SairSistema = new System.Windows.Forms.Button();
+            this.botaoHome = new System.Windows.Forms.Button();
+            this.telaHome1 = new testeDeFrontEnd1.TelaHome();
+            this.emprestimos2 = new testeDeFrontEnd1.Emprestimos();
             this.telaDeLogin1 = new testeDeFrontEnd1.TelaDeLogin();
             this.relatorios1 = new testeDeFrontEnd1.Relatorios();
             this.reservas1 = new testeDeFrontEnd1.Reservas();
             this.emprestimos1 = new testeDeFrontEnd1.Emprestimos();
             this.cadastros1 = new testeDeFrontEnd1.Cadastros();
-            this.emprestimos2 = new testeDeFrontEnd1.Emprestimos();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -61,6 +64,8 @@ namespace testeDeFrontEnd1
             this.panel1.Controls.Add(this.BotaoReservas);
             this.panel1.Controls.Add(this.BotaoEmprestimos);
             this.panel1.Controls.Add(this.BotaoCadastros);
+            this.panel1.Controls.Add(this.botaoHome);
+            this.panel1.Controls.Add(this.SairSistema);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -180,6 +185,7 @@ namespace testeDeFrontEnd1
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.telaHome1);
             this.panel4.Controls.Add(this.emprestimos2);
             this.panel4.Controls.Add(this.telaDeLogin1);
             this.panel4.Controls.Add(this.relatorios1);
@@ -190,6 +196,52 @@ namespace testeDeFrontEnd1
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(729, 421);
             this.panel4.TabIndex = 5;
+            // 
+            // SairSistema
+            // 
+            this.SairSistema.FlatAppearance.BorderSize = 0;
+            this.SairSistema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SairSistema.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SairSistema.ForeColor = System.Drawing.SystemColors.Control;
+            this.SairSistema.Image = ((System.Drawing.Image)(resources.GetObject("SairSistema.Image")));
+            this.SairSistema.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SairSistema.Location = new System.Drawing.Point(0, 382);
+            this.SairSistema.Name = "SairSistema";
+            this.SairSistema.Size = new System.Drawing.Size(200, 62);
+            this.SairSistema.TabIndex = 7;
+            this.SairSistema.Text = "Sair";
+            this.SairSistema.UseVisualStyleBackColor = true;
+            this.SairSistema.Click += new System.EventHandler(this.SairSistema_Click);
+            // 
+            // botaoHome
+            // 
+            this.botaoHome.FlatAppearance.BorderSize = 0;
+            this.botaoHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botaoHome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botaoHome.ForeColor = System.Drawing.SystemColors.Control;
+            this.botaoHome.Image = ((System.Drawing.Image)(resources.GetObject("botaoHome.Image")));
+            this.botaoHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.botaoHome.Location = new System.Drawing.Point(0, 35);
+            this.botaoHome.Name = "botaoHome";
+            this.botaoHome.Size = new System.Drawing.Size(200, 62);
+            this.botaoHome.TabIndex = 8;
+            this.botaoHome.Text = "Home";
+            this.botaoHome.UseVisualStyleBackColor = true;
+            this.botaoHome.Click += new System.EventHandler(this.botaoHome_Click);
+            // 
+            // telaHome1
+            // 
+            this.telaHome1.Location = new System.Drawing.Point(0, -103);
+            this.telaHome1.Name = "telaHome1";
+            this.telaHome1.Size = new System.Drawing.Size(743, 542);
+            this.telaHome1.TabIndex = 6;
+            // 
+            // emprestimos2
+            // 
+            this.emprestimos2.Location = new System.Drawing.Point(0, 0);
+            this.emprestimos2.Name = "emprestimos2";
+            this.emprestimos2.Size = new System.Drawing.Size(729, 421);
+            this.emprestimos2.TabIndex = 5;
             // 
             // telaDeLogin1
             // 
@@ -225,13 +277,6 @@ namespace testeDeFrontEnd1
             this.cadastros1.Name = "cadastros1";
             this.cadastros1.Size = new System.Drawing.Size(729, 424);
             this.cadastros1.TabIndex = 0;
-            // 
-            // emprestimos2
-            // 
-            this.emprestimos2.Location = new System.Drawing.Point(0, 0);
-            this.emprestimos2.Name = "emprestimos2";
-            this.emprestimos2.Size = new System.Drawing.Size(729, 421);
-            this.emprestimos2.TabIndex = 5;
             // 
             // Form1
             // 
@@ -274,6 +319,9 @@ namespace testeDeFrontEnd1
         private Relatorios relatorios1;
         private TelaDeLogin telaDeLogin1;
         private Emprestimos emprestimos2;
+        private System.Windows.Forms.Button SairSistema;
+        private System.Windows.Forms.Button botaoHome;
+        private TelaHome telaHome1;
     }
 }
 

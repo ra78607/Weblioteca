@@ -16,5 +16,13 @@ C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\De
 C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.ManterFuncionarios.resources
 C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.Relatorios.resources
 C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.Reservas.resources
-C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.TelaEmprestimos.resources
 C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.TelaDeLogin.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.FaturarEmprestimo.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.EmprestarExemplares.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.DevolucaoDeExemplares.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.ProlongarEmprestimo.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.TelaHome.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\Webiblioteca.csprojAssemblyReference.cache
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.ReservarExemplar.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.CancelarReserva.resources
+C:\Users\Henrique Kajihara\source\repos\testeDeFrontEnd1\testeDeFrontEnd1\obj\Debug\testeDeFrontEnd1.EmprestimoReserva.resources

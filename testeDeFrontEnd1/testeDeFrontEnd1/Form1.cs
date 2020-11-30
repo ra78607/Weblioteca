@@ -15,10 +15,17 @@ namespace testeDeFrontEnd1
         public Form1(){
             InitializeComponent();
             
-            SidePanelForm1.Height = BotaoCadastros.Height;
-            SidePanelForm1.Top = BotaoCadastros.Top;
+            SidePanelForm1.Height = botaoHome.Height;
+            SidePanelForm1.Top = botaoHome.Top;
+            telaHome1.BringToFront();
             telaDeLogin1.BringToFront();
-            //cadastros1.BringToFront();
+        }
+
+        private void botaoHome_Click(object sender, EventArgs e)
+        {
+            SidePanelForm1.Height = botaoHome.Height;
+            SidePanelForm1.Top = botaoHome.Top;
+            telaHome1.BringToFront();
         }
 
         private void BotaoCadastros_Click(object sender, EventArgs e)
@@ -48,5 +55,16 @@ namespace testeDeFrontEnd1
             SidePanelForm1.Top = BotaoRelatorios.Top;
             relatorios1.BringToFront();
         }
+
+        private void SairSistema_Click(object sender, EventArgs e)
+        {
+            SidePanelForm1.Height = SairSistema.Height;
+            SidePanelForm1.Top = SairSistema.Top;
+
+            if (MessageBox.Show("Finalizar programa?", "Finalizar o sistema?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                this.Close();
+        }
+
+
     }
 }

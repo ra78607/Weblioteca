@@ -30,10 +30,13 @@ namespace testeDeFrontEnd1
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SidePanelForm1 = new System.Windows.Forms.Panel();
             this.EmprestimoReserva = new System.Windows.Forms.Button();
             this.CancelarReserva = new System.Windows.Forms.Button();
             this.ReservarExemplares = new System.Windows.Forms.Button();
-            this.SidePanelForm1 = new System.Windows.Forms.Panel();
+            this.reservarExemplar1 = new testeDeFrontEnd1.ReservarExemplar();
+            this.cancelarReserva1 = new testeDeFrontEnd1.CancelarReserva();
+            this.emprestimoReserva1 = new testeDeFrontEnd1.EmprestimoReserva();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +50,15 @@ namespace testeDeFrontEnd1
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(226, 420);
             this.panel1.TabIndex = 2;
+            // 
+            // SidePanelForm1
+            // 
+            this.SidePanelForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.SidePanelForm1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.SidePanelForm1.Location = new System.Drawing.Point(0, 26);
+            this.SidePanelForm1.Name = "SidePanelForm1";
+            this.SidePanelForm1.Size = new System.Drawing.Size(5, 62);
+            this.SidePanelForm1.TabIndex = 3;
             // 
             // EmprestimoReserva
             // 
@@ -72,7 +84,7 @@ namespace testeDeFrontEnd1
             this.CancelarReserva.Name = "CancelarReserva";
             this.CancelarReserva.Size = new System.Drawing.Size(227, 62);
             this.CancelarReserva.TabIndex = 1;
-            this.CancelarReserva.Text = "CancelarReserva";
+            this.CancelarReserva.Text = "Cancelar Reserva";
             this.CancelarReserva.UseVisualStyleBackColor = false;
             this.CancelarReserva.Click += new System.EventHandler(this.CancelarReserva_Click);
             // 
@@ -90,19 +102,34 @@ namespace testeDeFrontEnd1
             this.ReservarExemplares.UseVisualStyleBackColor = false;
             this.ReservarExemplares.Click += new System.EventHandler(this.ReservarExemplares_Click);
             // 
-            // SidePanelForm1
+            // reservarExemplar1
             // 
-            this.SidePanelForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.SidePanelForm1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.SidePanelForm1.Location = new System.Drawing.Point(0, 26);
-            this.SidePanelForm1.Name = "SidePanelForm1";
-            this.SidePanelForm1.Size = new System.Drawing.Size(5, 62);
-            this.SidePanelForm1.TabIndex = 3;
+            this.reservarExemplar1.Location = new System.Drawing.Point(227, 0);
+            this.reservarExemplar1.Name = "reservarExemplar1";
+            this.reservarExemplar1.Size = new System.Drawing.Size(500, 420);
+            this.reservarExemplar1.TabIndex = 3;
+            // 
+            // cancelarReserva1
+            // 
+            this.cancelarReserva1.Location = new System.Drawing.Point(227, 0);
+            this.cancelarReserva1.Name = "cancelarReserva1";
+            this.cancelarReserva1.Size = new System.Drawing.Size(500, 420);
+            this.cancelarReserva1.TabIndex = 4;
+            // 
+            // emprestimoReserva1
+            // 
+            this.emprestimoReserva1.Location = new System.Drawing.Point(227, 0);
+            this.emprestimoReserva1.Name = "emprestimoReserva1";
+            this.emprestimoReserva1.Size = new System.Drawing.Size(500, 420);
+            this.emprestimoReserva1.TabIndex = 5;
             // 
             // Reservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.emprestimoReserva1);
+            this.Controls.Add(this.cancelarReserva1);
+            this.Controls.Add(this.reservarExemplar1);
             this.Controls.Add(this.panel1);
             this.Name = "Reservas";
             this.Size = new System.Drawing.Size(729, 421);
@@ -118,5 +145,8 @@ namespace testeDeFrontEnd1
         private System.Windows.Forms.Button ReservarExemplares;
         private System.Windows.Forms.Button EmprestimoReserva;
         private System.Windows.Forms.Panel SidePanelForm1;
+        private ReservarExemplar reservarExemplar1;
+        private CancelarReserva cancelarReserva1;
+        private EmprestimoReserva emprestimoReserva1;
     }
 }
