@@ -48,5 +48,12 @@ namespace testeDeFrontEnd1
             SidePanelForm1.Top = ProlongarEmprestimo.Top;
             prolongarEmprestimo1.BringToFront();
         }
+
+        private void button1AbonarMulta_Click(object sender, EventArgs e)
+        {
+            SidePanelForm1.Height = button1AbonarMulta.Height;
+            SidePanelForm1.Top = button1AbonarMulta.Top;
+            abonarMulta1.BringToFront();
+        }
     }
 }
